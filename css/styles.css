@@ -3,44 +3,48 @@ body{
     font :normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: hsla(185, 100%, 50%, 0.35);
+    background-color: hsla(72, 33%, 59%, 0.35);
 }
 h2{
-    color: rgb(193, 108, 28);
+    color: rgb(211, 156, 106);
     font-size: 2em;
 }
+h1{
+    color: rgb(173, 114, 114);
+    font-size: 30px;
+}
 header{
-    background-color: hsl(208, 15%, 42%);
+    background-color: hsl(210, 53%, 48%);
 }
 main{
     float: left;
     width: 65vw;
     height: 60vh;
-    background-color: hsl(193, 25%, 60%);
+    background-color: hsl(184, 78%, 57%);
 }
 aside{
     float: right;
     width: 25vw;
     height: 60vh;
-    background-color: hsl(0, 11%, 48%);
+    background-color: hsl(0, 31%, 47%);
 }
 footer{
     clear: both;
-    background-color: hsl(57, 43%, 36%);
+    background-color: hsl(54, 9%, 46%);
 }
 .structural{
     margin: 10px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(113, 90, 90);
 }
 #para1{
     color: rgb(138, 0, 0);
 }
 #para2{
-    color: rgb(0, 0, 0);
+    color: rgb(0, 115, 123);
 }
 a:hover{
-    color: #f20;
+    color: rgb(255, 238, 0);
 }
 footer p{
     font-size: 0.7em;
