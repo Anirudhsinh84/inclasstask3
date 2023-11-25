@@ -1,13 +1,18 @@
 /* Anirudhsinh Gohil 8927043*/
+html{
+    font :normal normal normal 20px/1.5 Arial, Helvetica, sans-serif;
+}
 body{
-    font :normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
+    
     width: 100vw;
     height: 100vh;
     background-color: hsla(72, 33%, 59%, 0.35);
+    display: flex;
+    flex-direction: column;
 }
 h2{
     color: rgb(211, 156, 106);
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 h1{
     color: rgb(173, 114, 114);
@@ -16,26 +21,55 @@ h1{
 header{
     background-color: hsl(210, 53%, 48%);
 }
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(15, 60, 60);
+    border: 0.1rem solid rgb(1, 2, 2);
+    background-color: antiquewhite;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+nav ul li a:hover{
+    color: bisque;
+    background-color: azure;
+    border-color: black;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
 main{
-    float: left;
-    width: 65vw;
-    height: 60vh;
+    flex: 2 1 70%;
     background-color: hsl(184, 78%, 57%);
 }
 aside{
-    float: right;
-    width: 25vw;
-    height: 60vh;
+    flex: 1 1 30%;
     background-color: hsl(0, 31%, 47%);
 }
+aside li{
+    list-style-type: square;
+    line-height: 2em;
+}
+aside a:hover{
+    color: antiquewhite;
+}
 footer{
-    clear: both;
     background-color: hsl(54, 9%, 46%);
 }
+img{
+    width: 80%;
+    height: 80%;
+}
 .structural{
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid rgb(113, 90, 90);
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.1em solid black;
 }
 #para1{
     color: rgb(138, 0, 0);
@@ -49,4 +83,27 @@ a:hover{
 footer p{
     font-size: 0.7em;
 }
+figure{
+    border: 0.1rem solid black;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+@media (max-width : 900px){
+    html{
+        font-size: 10px;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    section{
+        display: block;
+    }
+}
+
 
